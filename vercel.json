@@ -5,7 +5,8 @@
       "src": "frontend_book/package.json",
       "use": "@vercel/static-build",
       "config": {
-        "distDir": "frontend_book/build"
+        "buildCommand": "cd frontend_book && npm install && npm run build",
+        "outputDirectory": "frontend_book/build"
       }
     }
   ],
@@ -14,12 +15,6 @@
       "src": "/(.*)",
       "dest": "/frontend_book/build/$1",
       "status": 200
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/frontend_book/build/index.html"
     }
   ]
 }

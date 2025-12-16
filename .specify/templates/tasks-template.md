@@ -62,12 +62,12 @@ description: "Task list template for feature implementation"
 
 Examples of foundational tasks (adjust based on your project):
 
-- [ ] T004 Setup database schema and migrations framework
-- [ ] T005 [P] Implement authentication/authorization framework
-- [ ] T006 [P] Setup API routing and middleware structure
+- [ ] T004 Setup Docusaurus documentation framework
+- [ ] T005 [P] Define content structure and chapter templates
+- [ ] T006 [P] Establish citation format (IEEE Style) and reference system
 - [ ] T007 Create base models/entities that all stories depend on
-- [ ] T008 Configure error handling and logging infrastructure
-- [ ] T009 Setup environment configuration management
+- [ ] T008 Configure content validation and technical accuracy verification processes
+- [ ] T009 Setup environment configuration management for textbook build system
 
 **Checkpoint**: Foundation ready - user story implementation can now begin in parallel
 
@@ -88,12 +88,12 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 1
 
-- [ ] T012 [P] [US1] Create [Entity1] model in src/models/[entity1].py
-- [ ] T013 [P] [US1] Create [Entity2] model in src/models/[entity2].py
-- [ ] T014 [US1] Implement [Service] in src/services/[service].py (depends on T012, T013)
-- [ ] T015 [US1] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T016 [US1] Add validation and error handling
-- [ ] T017 [US1] Add logging for user story 1 operations
+- [ ] T012 [P] [US1] Create [Chapter/Section] content in docs/[chapter-name]/[section-name].md
+- [ ] T013 [P] [US1] Add diagrams and visual aids for [topic] in docs/[chapter-name]/assets/
+- [ ] T014 [US1] Implement [code example/algorithm] in examples/[topic]/[file].py (depends on T012, T013)
+- [ ] T015 [US1] Add mathematical formulas and derivations in docs/[chapter-name]/[section-name].md
+- [ ] T016 [US1] Add validation and technical accuracy verification
+- [ ] T017 [US1] Add learning objectives and exercises for user story 1
 
 **Checkpoint**: At this point, User Story 1 should be fully functional and testable independently
 
@@ -112,10 +112,10 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 2
 
-- [ ] T020 [P] [US2] Create [Entity] model in src/models/[entity].py
-- [ ] T021 [US2] Implement [Service] in src/services/[service].py
-- [ ] T022 [US2] Implement [endpoint/feature] in src/[location]/[file].py
-- [ ] T023 [US2] Integrate with User Story 1 components (if needed)
+- [ ] T020 [P] [US2] Create [Chapter/Section] content in docs/[chapter-name]/[section-name].md
+- [ ] T021 [US2] Add diagrams and visual aids for [topic] in docs/[chapter-name]/assets/
+- [ ] T022 [US2] Implement [code example/algorithm] in examples/[topic]/[file].py
+- [ ] T023 [US2] Integrate with User Story 1 content (if needed) with cross-references
 
 **Checkpoint**: At this point, User Stories 1 AND 2 should both work independently
 
@@ -134,9 +134,9 @@ Examples of foundational tasks (adjust based on your project):
 
 ### Implementation for User Story 3
 
-- [ ] T026 [P] [US3] Create [Entity] model in src/models/[entity].py
-- [ ] T027 [US3] Implement [Service] in src/services/[service].py
-- [ ] T028 [US3] Implement [endpoint/feature] in src/[location]/[file].py
+- [ ] T026 [P] [US3] Create [Chapter/Section] content in docs/[chapter-name]/[section-name].md
+- [ ] T027 [US3] Add diagrams and visual aids for [topic] in docs/[chapter-name]/assets/
+- [ ] T028 [US3] Implement [code example/algorithm] in examples/[topic]/[file].py
 
 **Checkpoint**: All user stories should now be independently functional
 
@@ -152,9 +152,9 @@ Examples of foundational tasks (adjust based on your project):
 
 - [ ] TXXX [P] Documentation updates in docs/
 - [ ] TXXX Code cleanup and refactoring
-- [ ] TXXX Performance optimization across all stories
+- [ ] TXXX [P] Academic peer review and validation
 - [ ] TXXX [P] Additional unit tests (if requested) in tests/unit/
-- [ ] TXXX Security hardening
+- [ ] TXXX Technical accuracy verification against credible sources (IEEE, ACM, Springer, MIT Press)
 - [ ] TXXX Run quickstart.md validation
 
 ---
@@ -245,7 +245,9 @@ With multiple developers:
 - [P] tasks = different files, no dependencies
 - [Story] label maps task to specific user story for traceability
 - Each user story should be independently completable and testable
-- Verify tests fail before implementing
+- Verify technical accuracy against credible sources (IEEE, ACM, Springer, MIT Press) before finalizing
 - Commit after each task or logical group
 - Stop at any checkpoint to validate story independently
 - Avoid: vague tasks, same file conflicts, cross-story dependencies that break independence
+- Each chapter must include learning objectives, summary, and exercises
+- All code examples and mathematical formulas must be validated and tested for correctness

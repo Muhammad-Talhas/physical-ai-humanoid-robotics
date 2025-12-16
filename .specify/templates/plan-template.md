@@ -31,7 +31,12 @@
 
 *GATE: Must pass before Phase 0 research. Re-check after Phase 1 design.*
 
-[Gates determined based on constitution file]
+- Technical Accuracy: Verify all technical definitions align with credible robotics/AI literature (IEEE, ACM, Springer, MIT Press)
+- Clarity and Accessibility: Ensure content is accessible for undergraduate and early-graduate learners with clear explanations and visual aids
+- Practical Applicability: Confirm all theoretical concepts include practical examples, diagrams, and hands-on exercises
+- Conceptual Integrity: Validate that Physical AI is presented as embodied intelligence, not merely software-based AI
+- Educational Structure: Verify chapter follows required structure with learning objectives, summary, and exercises
+- Visual Learning: Ensure visual explanations (diagrams, flowcharts, pseudocode) are included where beneficial
 
 ## Project Structure
 

@@ -109,7 +109,11 @@
 
 ### Measurable Outcomes
 
-- **SC-001**: [Measurable metric, e.g., "Users can complete account creation in under 2 minutes"]
-- **SC-002**: [Measurable metric, e.g., "System handles 1000 concurrent users without degradation"]
-- **SC-003**: [User satisfaction metric, e.g., "90% of users successfully complete primary task on first attempt"]
-- **SC-004**: [Business metric, e.g., "Reduce support tickets related to [X] by 50%"]
+- **SC-001**: Content is technically accurate and rooted in current robotics, AI, and mechatronics research
+- **SC-002**: Material is accessible for undergraduate and early-graduate learners with clear explanations and examples
+- **SC-003**: Each theoretical concept is paired with practical applicability through examples, diagrams, and hands-on exercises
+- **SC-004**: Physical AI is explained as embodied intelligence, not merely software-based AI
+- **SC-005**: Each chapter starts with learning objectives and ends with summary plus exercises
+- **SC-006**: Visual explanations (diagrams, flowcharts, pseudocode) are included where beneficial
+- **SC-007**: All code snippets (Python, ROS, etc.) are runnable and verified
+- **SC-008**: All mathematical formulas are validated and tested for correctness

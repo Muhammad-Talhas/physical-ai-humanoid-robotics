@@ -1,55 +1,49 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+<!--
+Sync Impact Report:
+- Version change: 0.1.0 → 1.0.0
+- Modified principles: All principles updated to reflect Physical AI and Humanoid Robotics textbook project
+- Added sections: Core Principles, Additional Constraints, Development Workflow
+- Removed sections: None
+- Templates requiring updates: ✅ .specify/templates/plan-template.md updated
+- Templates requiring updates: ✅ .specify/templates/spec-template.md updated
+- Templates requiring updates: ✅ .specify/templates/tasks-template.md updated
+- Follow-up TODOs: None
+-->
+
+# Physical AI and Humanoid Robotics Constitution
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### Technical Accuracy and Academic Rigor
+All technical definitions and concepts must be cross-checked with credible robotics/AI literature (IEEE, ACM, Springer, MIT Press). Content must be technically accurate and rooted in current robotics, AI, and mechatronics research.
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### Clarity and Accessibility
+Content must be clear and accessible for undergraduate and early-graduate learners. Complex concepts should be explained with practical examples, diagrams, and visual aids. Avoid overuse of advanced jargon unless defined clearly inside the text.
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### Practical Applicability (NON-NEGOTIABLE)
+Every theoretical concept must be paired with practical applicability through examples, diagrams, and hands-on exercises. All code snippets (Python, ROS, etc.) must be runnable and verified, and all mathematical formulas must be validated and tested for correctness.
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### Conceptual Integrity
+Physical AI must be explained as embodied intelligence, not merely software-based AI. Maintain consistency across chapters in terminology, tone, and structure with clear, consistent terminology for humanoid robotics, control systems, sensors, and Physical AI frameworks.
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### Educational Structure
+Each chapter must start with learning objectives and end with summary plus exercises. The textbook must maintain consistent structure: 10–14 chapters + glossary + index, with each chapter deliverable as an independent learning module.
 
-### [PRINCIPLE_6_NAME]
+### Visual and Interactive Learning
+Visual explanations (diagrams, flowcharts, pseudocode) are required where beneficial. All content must be formatted as Docusaurus-compatible Markdown files and fully buildable using Spec-Kit Plus and deployable on GitHub Pages.
 
+## Additional Constraints
+Technology stack: Docusaurus-compatible Markdown files
+Length: ~40,000 to 60,000 words total
+Format: Must be fully buildable using Spec-Kit Plus and deployable on GitHub Pages
+Citation format: IEEE Style
+Academic rigor: 40% of sources must be peer-reviewed research papers or academic books
+Content scope: Must cover Foundations of Physical AI & embodied intelligence, Humanoid robot anatomy, Sensors/actuators/locomotion, Control theory, Perception/motion planning, HRI principles, Safety/ethics, Practical labs, and Emerging trends
 
-[PRINCIPLE__DESCRIPTION]
-
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
-
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
-
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
-
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+## Development Workflow
+Content development must follow the spec-plan-tasks workflow with formal review by subject matter experts. Each chapter must undergo peer review to ensure technical accuracy. All code examples and mathematical formulas must be validated through testing. Success criteria include: book compiles without errors in Docusaurus, content is technically accurate and up-to-date, all chapters maintain consistent structure and writing style, students can follow concepts without prior deep robotics knowledge, hands-on activities are testable and produce expected outputs, peer reviewers find no major conceptual errors.
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
+This constitution governs all aspects of the Physical AI and Humanoid Robotics textbook development. All content, code, and documentation must comply with these principles. Any deviations must be documented and justified. The constitution supersedes all other practices and guides all decision-making for the project. All reviews must verify compliance with these principles.
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
-
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+**Version**: 1.0.0 | **Ratified**: 2025-12-16 | **Last Amended**: 2025-12-16

@@ -4,7 +4,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 function Home() {
   const {siteConfig} = useDocusaurusContext();
-  return <Redirect to="/physical-ai-and-humanoid-robotic/docs/intro" />;
+  return <Redirect to="/docs/intro" />;
 }
 
 export default Home;

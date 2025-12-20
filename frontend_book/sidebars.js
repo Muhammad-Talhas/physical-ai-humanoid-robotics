@@ -23,6 +23,26 @@ const sidebars = {
         'chapters/module-2-digital-twin/ch3-sensor-simulation-unity',
       ],
     },
+    {
+      type: 'category',
+      label: 'Module 3: The AI-Robot Brain (NVIDIA Isaac™)',
+      items: [
+        'chapters/module-3-ai-robot-brain/intro',
+        'chapters/module-3-ai-robot-brain/ch1-nvidia-isaac-sim-synthetic-data',
+        'chapters/module-3-ai-robot-brain/ch2-isaac-ros-visual-slam',
+        'chapters/module-3-ai-robot-brain/ch3-autonomous-navigation-nav2',
+      ],
+    },
+    {
+      type: 'category',
+      label: 'Module 4: Vision-Language-Action',
+      items: [
+        'chapters/module-4-vision-language-action/intro',
+        'chapters/module-4-vision-language-action/chapter-4-1-voice-to-action',
+        'chapters/module-4-vision-language-action/chapter-4-2-cognitive-planning-llms',
+        'chapters/module-4-vision-language-action/chapter-4-3-capstone-autonomous-humanoid',
+      ],
+    },
     // Additional modules will be added here as they are developed
   ],
 };

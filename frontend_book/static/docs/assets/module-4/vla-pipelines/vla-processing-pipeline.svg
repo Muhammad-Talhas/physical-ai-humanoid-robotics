@@ -1,0 +1,120 @@
+<svg width="900" height="400" xmlns="http://www.w3.org/2000/svg">
+  <title>VLA Processing Pipeline</title>
+  <desc>Diagram showing the complete Vision-Language-Action processing pipeline</desc>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="450" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#212529" font-weight="bold">
+    Vision-Language-Action (VLA) Processing Pipeline
+  </text>
+
+  <!-- Input Stage -->
+  <rect x="50" y="100" width="150" height="80" fill="#e9ecef" stroke="#6c757d" stroke-width="2" rx="10"/>
+  <text x="125" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Input
+  </text>
+  <text x="125" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Voice Command
+  </text>
+
+  <!-- Vision Stage -->
+  <rect x="230" y="100" width="150" height="80" fill="#d1ecf1" stroke="#0c5460" stroke-width="2" rx="10"/>
+  <text x="305" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Vision
+  </text>
+  <text x="305" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Perception
+  </text>
+
+  <!-- Language Stage -->
+  <rect x="410" y="100" width="150" height="80" fill="#d4edda" stroke="#155724" stroke-width="2" rx="10"/>
+  <text x="485" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Language
+  </text>
+  <text x="485" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Understanding
+  </text>
+
+  <!-- Action Stage -->
+  <rect x="590" y="100" width="150" height="80" fill="#f8d7da" stroke="#721c24" stroke-width="2" rx="10"/>
+  <text x="665" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Action
+  </text>
+  <text x="665" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Execution
+  </text>
+
+  <!-- Output Stage -->
+  <rect x="770" y="100" width="150" height="80" fill="#fff3cd" stroke="#856404" stroke-width="2" rx="10"/>
+  <text x="845" y="135" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Output
+  </text>
+  <text x="845" y="155" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Robot Action
+  </text>
+
+  <!-- Feedback Loop -->
+  <rect x="305" y="220" width="250" height="80" fill="#cce7ff" stroke="#004085" stroke-width="2" rx="10"/>
+  <text x="430" y="255" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Feedback Loop
+  </text>
+  <text x="430" y="275" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Perception Update
+  </text>
+
+  <!-- Arrows showing main flow -->
+  <line x1="200" y1="140" x2="230" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="380" y1="140" x2="410" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="560" y1="140" x2="590" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="740" y1="140" x2="770" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Feedback arrows -->
+  <line x1="430" y1="180" x2="430" y2="220" stroke="#212529" stroke-width="1" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <line x1="430" y1="300" x2="430" y2="330" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="430" y1="330" x2="305" y2="140" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- Process details -->
+  <text x="125" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Speech recognition
+  </text>
+  <text x="125" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Text transcription
+  </text>
+
+  <text x="305" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Object detection
+  </text>
+  <text x="305" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Environment scan
+  </text>
+
+  <text x="485" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Intent extraction
+  </text>
+  <text x="485" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Task planning
+  </text>
+
+  <text x="665" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Action execution
+  </text>
+  <text x="665" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Navigation/Manipulation
+  </text>
+
+  <text x="845" y="220" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Robot movement
+  </text>
+  <text x="845" y="235" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Task completion
+  </text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#212529"/>
+    </marker>
+  </defs>
+</svg>

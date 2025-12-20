@@ -40,7 +40,7 @@ The sensor simulation architecture involves several key components:
 4. **Data Conversion**: Raw simulation data is converted to standard sensor formats
 5. **ROS Integration**: Sensor data is published via ROS topics
 
-![Sensor Simulation Pipeline](/docs/assets/module-2/diagrams/sensor-simulation-pipeline.svg)
+![Sensor Simulation Pipeline](/assets/module-2/diagrams/sensor-simulation-pipeline.svg)
 
 *Figure 5: Comprehensive sensor simulation pipeline showing data flow from physics simulation to application-ready sensor data. This diagram illustrates the end-to-end process including physics-based simulation, sensor data generation, and data processing stages.*
 
@@ -787,7 +787,7 @@ public class HumanRobotInteraction : MonoBehaviour
 }
 ```
 
-![Unity HRI Scenario](/docs/assets/module-2/diagrams/unity-hri-scenario.svg)
+![Unity HRI Scenario](/assets/module-2/diagrams/unity-hri-scenario.svg)
 
 *Figure 6: Unity-based Human-Robot Interaction scenario showing architecture, implementation, and validation framework. This diagram illustrates the complete Unity HRI architecture including client layer, Unity logic layer, and ROS/ROS2 integration, along with safety and validation components.*
 

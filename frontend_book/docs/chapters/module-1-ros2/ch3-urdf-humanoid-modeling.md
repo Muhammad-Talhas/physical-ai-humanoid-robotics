@@ -15,6 +15,8 @@ URDF (Unified Robot Description Format) is an XML-based format used to describe 
 
 ### Basic URDF Structure
 
+![URDF Structure Example](/assets/module-1/urdf-structure-example.svg)
+
 A minimal URDF file follows this structure:
 
 ```xml
@@ -149,6 +151,8 @@ ROS 2 supports different hardware interfaces:
 - **PositionJointInterface**: Controls joint position
 
 ## Modeling Humanoid Robots
+
+![Humanoid Robot Model](/assets/module-1/humanoid-model-diagram.svg)
 
 Humanoid robots require special attention to anthropomorphic joint configurations and kinematic chains. The typical humanoid structure includes:
 

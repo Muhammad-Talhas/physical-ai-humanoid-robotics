@@ -1,0 +1,99 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <title>Humanoid Navigation Challenges</title>
+  <desc>Diagram showing gait and balance issues for humanoid navigation</desc>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#212529">
+    Humanoid Navigation Challenges - Gait and Balance Issues
+  </text>
+
+  <!-- Humanoid Robot Representation -->
+  <g transform="translate(150, 200)">
+    <!-- Head -->
+    <circle cx="50" cy="30" r="15" fill="#6c757d" stroke="#495057" stroke-width="2"/>
+
+    <!-- Body -->
+    <rect x="40" y="45" width="20" height="50" fill="#495057" stroke="#343a40" stroke-width="2"/>
+
+    <!-- Arms -->
+    <line x1="40" y1="55" x2="15" y2="70" stroke="#495057" stroke-width="4"/>
+    <line x1="60" y1="55" x2="85" y2="70" stroke="#495057" stroke-width="4"/>
+
+    <!-- Legs -->
+    <line x1="45" y1="95" x2="40" y2="140" stroke="#495050" stroke-width="4"/>
+    <line x1="55" y1="95" x2="60" y2="140" stroke="#495050" stroke-width="4"/>
+
+    <!-- Feet -->
+    <rect x="35" y="140" width="10" height="5" fill="#212529" stroke="#000" stroke-width="1"/>
+    <rect x="55" y="140" width="10" height="5" fill="#212529" stroke="#000" stroke-width="1"/>
+
+    <!-- ZMP Point -->
+    <circle cx="50" cy="145" r="3" fill="red" stroke="red" stroke-width="1"/>
+    <text x="50" y="160" font-family="Arial" font-size="10" text-anchor="middle" fill="red">ZMP</text>
+  </g>
+
+  <!-- Navigation Environment -->
+  <g transform="translate(0, 350)">
+    <!-- Ground -->
+    <rect x="0" y="0" width="800" height="20" fill="#8b4513" stroke="#654321" stroke-width="1"/>
+
+    <!-- Obstacles -->
+    <rect x="100" y="-40" width="30" height="40" fill="#6c757d" stroke="#495057" stroke-width="2"/>
+    <rect x="250" y="-60" width="20" height="60" fill="#6c757d" stroke="#495057" stroke-width="2"/>
+    <rect x="400" y="-30" width="40" height="30" fill="#6c757d" stroke="#495057" stroke-width="2"/>
+    <rect x="550" y="-50" width="25" height="50" fill="#6c757d" stroke="#495057" stroke-width="2"/>
+
+    <!-- Steps/Stairs -->
+    <rect x="650" y="-20" width="30" height="20" fill="#a9a9a9" stroke="#696969" stroke-width="1"/>
+    <rect x="650" y="-40" width="30" height="20" fill="#a9a9a9" stroke="#696969" stroke-width="1"/>
+    <rect x="650" y="-60" width="30" height="20" fill="#a9a9a9" stroke="#696969" stroke-width="1"/>
+
+    <!-- Unstable Surface -->
+    <rect x="180" y="0" width="60" height="5" fill="#ffd700" stroke="#daa520" stroke-width="1"/>
+    <text x="210" y="15" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">Slippery</text>
+  </g>
+
+  <!-- Challenge Boxes -->
+  <rect x="50" y="100" width="250" height="80" fill="#ffeaa7" stroke="#fdcb6e" stroke-width="2" rx="10"/>
+  <text x="60" y="120" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3436">Balance Maintenance</text>
+  <text x="60" y="135" font-family="Arial" font-size="10" fill="#2d3436">• Zero Moment Point (ZMP) control</text>
+  <text x="60" y="150" font-family="Arial" font-size="10" fill="#2d3436">• Center of Mass management</text>
+  <text x="60" y="165" font-family="Arial" font-size="10" fill="#2d3436">• Reactive balance recovery</text>
+
+  <rect x="500" y="100" width="250" height="80" fill="#fd79a8" stroke="#e84393" stroke-width="2" rx="10"/>
+  <text x="510" y="120" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3436">Gait Planning</text>
+  <text x="510" y="135" font-family="Arial" font-size="10" fill="#2d3436">• Footstep placement optimization</text>
+  <text x="510" y="150" font-family="Arial" font-size="10" fill="#2d3436">• Step size and timing constraints</text>
+  <text x="510" y="165" font-family="Arial" font-size="10" fill="#2d3436">• Terrain adaptation</text>
+
+  <rect x="50" y="450" width="250" height="80" fill="#74b9ff" stroke="#0984e3" stroke-width="2" rx="10"/>
+  <text x="60" y="470" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3436">Step Height Navigation</text>
+  <text x="60" y="485" font-family="Arial" font-size="10" fill="#2d3436">• Stair climbing strategies</text>
+  <text x="60" y="500" font-family="Arial" font-size="10" fill="#2d3436">• Obstacle step-over capability</text>
+  <text x="60" y="515" font-family="Arial" font-size="10" fill="#2d3436">• Multi-contact planning</text>
+
+  <rect x="500" y="450" width="250" height="80" fill="#00b894" stroke="#00a085" stroke-width="2" rx="10"/>
+  <text x="510" y="470" font-family="Arial" font-size="12" font-weight="bold" fill="#2d3436">Dynamic Stability</text>
+  <text x="510" y="485" font-family="Arial" font-size="10" fill="#2d3436">• Real-time stability assessment</text>
+  <text x="510" y="500" font-family="Arial" font-size="10" fill="#2d3436">• Disturbance rejection</text>
+  <text x="510" y="515" font-family="Arial" font-size="10" fill="#2d3436">• Perturbation recovery</text>
+
+  <!-- Walking Path -->
+  <path d="M 150 180 Q 200 160 250 170 Q 300 180 350 160 Q 400 150 450 170 Q 500 190 550 160 Q 600 140 650 160"
+        fill="none" stroke="#e17055" stroke-width="3" stroke-dasharray="5,5"/>
+  <text x="400" y="140" font-family="Arial" font-size="12" text-anchor="middle" fill="#e17055">Navigation Path</text>
+
+  <!-- Balance Recovery Arrow -->
+  <line x1="200" y1="180" x2="200" y2="120" stroke="#e17055" stroke-width="2" stroke-dasharray="5,5" marker-end="url(#arrow)"/>
+  <text x="210" y="150" font-family="Arial" font-size="10" fill="#e17055">Recovery</text>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#e17055"/>
+    </marker>
+  </defs>
+</svg>

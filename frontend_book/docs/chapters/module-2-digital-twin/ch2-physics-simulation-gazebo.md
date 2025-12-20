@@ -91,7 +91,7 @@ When choosing a physics engine for your humanoid robotics simulation, consider t
 4. **Community Support**: ODE has the most extensive documentation and examples
 5. **Development Stage**: Early development may benefit from ODE's stability; advanced applications might prefer DART
 
-![Physics Engine Comparison](/docs/assets/module-2/diagrams/physics-engine-comparison.svg)
+![Physics Engine Comparison](/assets/module-2/diagrams/physics-engine-comparison.svg)
 
 *Figure 3: Comprehensive comparison of physics engines available in Gazebo. This diagram illustrates the characteristics, performance trade-offs, and selection criteria for ODE, Bullet, and DART physics engines, including their internal architecture and integration with Gazebo.*
 
@@ -245,7 +245,7 @@ World files define the simulation environment, including the physics properties,
 </sdf>
 ```
 
-![Gazebo World Structure](/docs/assets/module-2/diagrams/gazebo-world-structure.svg)
+![Gazebo World Structure](/assets/module-2/diagrams/gazebo-world-structure.svg)
 
 *Figure 4: Detailed structure of Gazebo world files using SDF format. This diagram shows the hierarchical organization of world files, example structure, loading sequence, and key components breakdown including environment settings, physics configuration, and model integration.*
 

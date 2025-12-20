@@ -12,6 +12,8 @@ By the end of this chapter, students will be able to:
 
 ROS 2 (Robot Operating System 2) is a flexible framework for writing robot software. It's a collection of tools, libraries, and conventions that aim to simplify the task of creating complex and robust robot behavior across a wide variety of robot platforms.
 
+![ROS 2 Architecture](/assets/module-1/ros2-architecture-diagram.svg)
+
 ### Core Architecture Components
 
 The fundamental building blocks of ROS 2 include:
@@ -22,6 +24,8 @@ The fundamental building blocks of ROS 2 include:
 - **Actions**: Actions are a more advanced form of services that support long-running requests with feedback.
 
 ## Nodes, Topics, Services, and Actions
+
+![Node-Topic-Service Communication](/assets/module-1/node-topic-service-communication.svg)
 
 ### Nodes
 

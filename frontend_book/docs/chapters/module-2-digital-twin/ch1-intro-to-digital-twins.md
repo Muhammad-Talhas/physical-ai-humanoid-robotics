@@ -14,7 +14,7 @@ By the end of this chapter, students will be able to:
 
 A digital twin is a virtual representation of a physical system that spans its lifecycle, is updated with real-time data, and uses simulation, machine learning, and reasoning to help decision-making. In robotics, digital twins serve as virtual counterparts of physical robots, allowing for testing, validation, and optimization without the risks and costs associated with physical hardware.
 
-![Digital Twin Architecture](/docs/assets/module-2/diagrams/digital-twin-concept.svg)
+![Digital Twin Architecture](/assets/module-2/diagrams/digital-twin-concept.svg)
 
 *Figure 1: Digital Twin Architecture showing bidirectional data flow between physical robot and virtual model. This diagram illustrates the key components including the physical robot, data collection layer, digital twin model, analytics engine, and feedback loop that enable real-time monitoring and optimization.*
 
@@ -30,6 +30,8 @@ In robotics, digital twins have evolved to encompass:
 - **Training data generation**: Creating labeled datasets for machine learning
 - **System validation**: Testing robot behaviors in various scenarios
 - **Predictive maintenance**: Monitoring robot health and predicting failures
+
+![Gazebo vs Unity Comparison](/assets/module-2/diagrams/gazebo-vs-unity-comparison.svg)
 
 ## Role of Simulation in Humanoid Robotics
 

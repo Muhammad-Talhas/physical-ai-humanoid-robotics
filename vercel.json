@@ -10,10 +10,11 @@
       }
     }
   ],
+  "outputDirectory": "frontend_book/build",
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "/frontend_book/build/$1"
+      "destination": "/index.html"
     }
   ]
 }

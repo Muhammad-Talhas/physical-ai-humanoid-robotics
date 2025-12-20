@@ -8,18 +8,5 @@
         "distDir": "frontend_book/build"
       }
     }
-  ],
-  "routes": [
-    {
-      "src": "/(.*)",
-      "dest": "/frontend_book/build/$1",
-      "status": 200
-    }
-  ],
-  "rewrites": [
-    {
-      "source": "/(.*)",
-      "destination": "/frontend_book/build/index.html"
-    }
   ]
 }

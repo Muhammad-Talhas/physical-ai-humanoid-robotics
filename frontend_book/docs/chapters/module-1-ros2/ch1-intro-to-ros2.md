@@ -1,3 +1,7 @@
+---
+sidebar_position: 2
+---
+
 # Chapter 1: Introduction to ROS 2 Architecture
 
 ## Learning Objectives

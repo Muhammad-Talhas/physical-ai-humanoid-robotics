@@ -1,3 +1,9 @@
+---
+id: intro
+title: Introduction
+sidebar_position: 1
+---
+
 # Physical AI and Humanoid Robotics: A Comprehensive Textbook
 
 Welcome to the Physical AI and Humanoid Robotics textbook! This comprehensive resource guides you through the fascinating world of embodied artificial intelligence and humanoid robotics, from foundational concepts to advanced AI-driven control systems.

@@ -31,8 +31,6 @@ In robotics, digital twins have evolved to encompass:
 - **System validation**: Testing robot behaviors in various scenarios
 - **Predictive maintenance**: Monitoring robot health and predicting failures
 
-![Gazebo vs Unity Comparison](/assets/module-2/diagrams/gazebo-vs-unity-comparison.svg)
-
 ## Role of Simulation in Humanoid Robotics
 
 Simulation plays a crucial role in humanoid robotics development due to the complexity and cost of physical prototypes. Humanoid robots have multiple degrees of freedom, complex kinematics, and require sophisticated control algorithms that must be thoroughly tested before deployment.
@@ -157,7 +155,7 @@ Unity is a general-purpose game engine adapted for robotics simulation:
 | Performance | Good | Excellent (for visuals) |
 | Cost | Free | Free (Personal) |
 
-![Gazebo vs Unity Comparison](/docs/assets/module-2/diagrams/gazebo-vs-unity-comparison.svg)
+![Gazebo vs Unity Comparison](/assets/module-2/diagrams/gazebo-vs-unity-comparison.svg)
 
 *Figure 2: Comparative analysis of Gazebo and Unity for robotics simulation. This comprehensive comparison chart shows the relative strengths of each platform across different aspects including primary purpose, physics engines, sensor simulation capabilities, and use cases. The hybrid approach diagram illustrates how both platforms can be combined to leverage their respective strengths.*
 

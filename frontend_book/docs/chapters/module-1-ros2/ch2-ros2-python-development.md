@@ -1,3 +1,7 @@
+---
+sidebar_position: 3
+---
+
 # Chapter 2: ROS 2 Development with Python (rclpy)
 
 ## Learning Objectives

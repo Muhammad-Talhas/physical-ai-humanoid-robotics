@@ -1,0 +1,62 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Physics Engine Comparison Diagram -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <text x="400" y="40" font-family="Arial" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">Physics Engine Comparison</text>
+
+  <!-- ODE Physics Engine -->
+  <rect x="80" y="80" width="200" height="180" fill="#4e73df" stroke="#2e59d9" stroke-width="2" rx="10"/>
+  <text x="180" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">ODE</text>
+  <text x="180" y="140" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Open Dynamics Engine</text>
+  <text x="180" y="160" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Fast collision detection</text>
+  <text x="180" y="175" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Joint constraints</text>
+  <text x="180" y="190" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Widely used in robotics</text>
+  <text x="180" y="205" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Good for rigid bodies</text>
+  <text x="180" y="220" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Stable but basic</text>
+
+  <!-- Bullet Physics Engine -->
+  <rect x="300" y="80" width="200" height="180" fill="#1cc88a" stroke="#17a2b8" stroke-width="2" rx="10"/>
+  <text x="400" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Bullet</text>
+  <text x="400" y="140" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Bullet Physics Library</text>
+  <text x="400" y="160" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Advanced collision detection</text>
+  <text x="400" y="175" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Soft body simulation</text>
+  <text x="400" y="190" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Vehicle dynamics</text>
+  <text x="400" y="205" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• More complex features</text>
+  <text x="400" y="220" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Good for games/VR</text>
+
+  <!-- DART Physics Engine -->
+  <rect x="520" y="80" width="200" height="180" fill="#36b9cc" stroke="#2c97b0" stroke-width="2" rx="10"/>
+  <text x="620" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">DART</text>
+  <text x="620" y="140" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Dynamic Animation</text>
+  <text x="620" y="155" font-family="Arial" font-size="10" text-anchor="middle" fill="white">and Robotics Toolkit</text>
+  <text x="620" y="175" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Kinematic chains</text>
+  <text x="620" y="190" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Humanoid robots</text>
+  <text x="620" y="205" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Inverse kinematics</text>
+  <text x="620" y="220" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Advanced robotics</text>
+
+  <!-- Unity PhysX -->
+  <rect x="80" y="300" width="200" height="180" fill="#f6c23e" stroke="#f4b62c" stroke-width="2" rx="10"/>
+  <text x="180" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">PhysX</text>
+  <text x="180" y="360" font-family="Arial" font-size="10" text-anchor="middle" fill="white">NVIDIA PhysX</text>
+  <text x="180" y="380" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• GPU acceleration</text>
+  <text x="180" y="395" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Real-time simulation</text>
+  <text x="180" y="410" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• High performance</text>
+  <text x="180" y="425" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Visual quality</text>
+  <text x="180" y="440" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Game development</text>
+
+  <!-- Custom Physics -->
+  <rect x="300" y="300" width="200" height="180" fill="#e74a3b" stroke="#d32f2f" stroke-width="2" rx="10"/>
+  <text x="400" y="330" font-family="Arial" font-size="14" text-anchor="middle" fill="white" font-weight="bold">Custom</text>
+  <text x="400" y="360" font-family="Arial" font-size="10" text-anchor="middle" fill="white">Custom Solutions</text>
+  <text x="400" y="380" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Specialized needs</text>
+  <text x="400" y="395" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Optimization</text>
+  <text x="400" y="410" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Proprietary</text>
+  <text x="400" y="425" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Research focused</text>
+  <text x="400" y="440" font-family="Arial" font-size="9" text-anchor="middle" fill="white">• Specific requirements</text>
+
+  <!-- Comparison Legend -->
+  <rect x="100" y="500" width="600" height="70" fill="white" stroke="#ccc" stroke-width="1" rx="5"/>
+  <text x="400" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">Physics Engine Selection Criteria</text>
+  <text x="120" y="540" font-family="Arial" font-size="10" fill="#4e73df">ODE: Traditional robotics, stable</text>
+  <text x="120" y="555" font-family="Arial" font-size="10" fill="#1cc88a">Bullet: Advanced features, games</text>
+  <text x="120" y="570" font-family="Arial" font-size="10" fill="#f6c23e">PhysX: High performance, visual</text>
+</svg>

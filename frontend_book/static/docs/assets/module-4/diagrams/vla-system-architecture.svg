@@ -1,0 +1,119 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <title>Vision-Language-Action System Architecture</title>
+  <desc>Architecture diagram showing the complete VLA system with perception, language, and action layers</desc>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#212529" font-weight="bold">
+    Vision-Language-Action (VLA) System Architecture
+  </text>
+
+  <!-- Perception Layer -->
+  <rect x="50" y="80" width="200" height="120" fill="#e9ecef" stroke="#6c757d" stroke-width="2" rx="10"/>
+  <text x="150" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Perception Layer
+  </text>
+  <text x="150" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Camera input
+  </text>
+  <text x="150" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • LiDAR data
+  </text>
+  <text x="150" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • IMU sensors
+  </text>
+
+  <!-- Language Understanding Layer -->
+  <rect x="300" y="80" width="200" height="120" fill="#d1ecf1" stroke="#0c5460" stroke-width="2" rx="10"/>
+  <text x="400" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Language Understanding
+  </text>
+  <text x="400" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Voice processing
+  </text>
+  <text x="400" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Intent extraction
+  </text>
+  <text x="400" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Context analysis
+  </text>
+
+  <!-- Cognitive Planning Layer -->
+  <rect x="550" y="80" width="200" height="120" fill="#d4edda" stroke="#155724" stroke-width="2" rx="10"/>
+  <text x="650" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Cognitive Planning
+  </text>
+  <text x="650" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • LLM reasoning
+  </text>
+  <text x="650" y="150" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Task decomposition
+  </text>
+  <text x="650" y="165" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Action validation
+  </text>
+
+  <!-- Action Execution Layer -->
+  <rect x="550" y="250" width="200" height="120" fill="#f8d7da" stroke="#721c24" stroke-width="2" rx="10"/>
+  <text x="650" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Action Execution
+  </text>
+  <text x="650" y="305" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Navigation
+  </text>
+  <text x="650" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Manipulation
+  </text>
+  <text x="650" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Communication
+  </text>
+
+  <!-- Feedback Loop -->
+  <rect x="300" y="250" width="200" height="120" fill="#fff3cd" stroke="#856404" stroke-width="2" rx="10"/>
+  <text x="400" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Feedback Loop
+  </text>
+  <text x="400" y="305" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • State updates
+  </text>
+  <text x="400" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Error detection
+  </text>
+  <text x="400" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Plan adaptation
+  </text>
+
+  <!-- Monitoring Layer -->
+  <rect x="50" y="250" width="200" height="120" fill="#cce7ff" stroke="#004085" stroke-width="2" rx="10"/>
+  <text x="150" y="280" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Monitoring
+  </text>
+  <text x="150" y="305" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Performance
+  </text>
+  <text x="150" y="320" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Safety monitoring
+  </text>
+  <text x="150" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Task tracking
+  </text>
+
+  <!-- Arrows showing data flow -->
+  <line x1="250" y1="140" x2="300" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="140" x2="550" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="650" y1="200" x2="650" y2="250" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="650" y1="370" x2="650" y2="400" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="650" y1="400" x2="500" y2="310" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="400" y1="370" x2="400" y2="400" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="400" y1="400" x2="250" y2="310" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="250" y1="310" x2="200" y2="200" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#212529"/>
+    </marker>
+  </defs>
+</svg>

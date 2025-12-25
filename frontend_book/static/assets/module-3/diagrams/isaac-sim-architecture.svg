@@ -1,0 +1,57 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <title>Isaac Sim Architecture Overview</title>
+  <desc>Architecture diagram showing components and workflows of NVIDIA Isaac Sim</desc>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#212529">
+    NVIDIA Isaac Sim Architecture
+  </text>
+
+  <!-- Components -->
+  <rect x="50" y="100" width="200" height="80" fill="#007bff" stroke="#0056b3" stroke-width="2" rx="10"/>
+  <text x="150" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="white">
+    Omniverse Platform
+  </text>
+
+  <rect x="300" y="100" width="200" height="80" fill="#28a745" stroke="#1e7e34" stroke-width="2" rx="10"/>
+  <text x="400" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="white">
+    RTX Rendering
+  </text>
+
+  <rect x="550" y="100" width="200" height="80" fill="#ffc107" stroke="#d39e00" stroke-width="2" rx="10"/>
+  <text x="650" y="145" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529">
+    Physics Engines
+  </text>
+
+  <rect x="150" y="220" width="200" height="80" fill="#dc3545" stroke="#c82333" stroke-width="2" rx="10"/>
+  <text x="250" y="265" font-family="Arial" font-size="14" text-anchor="middle" fill="white">
+    USD Integration
+  </text>
+
+  <rect x="400" y="220" width="200" height="80" fill="#17a2b8" stroke="#117a8b" stroke-width="2" rx="10"/>
+  <text x="500" y="265" font-family="Arial" font-size="14" text-anchor="middle" fill="white">
+    ROS 2 Bridge
+  </text>
+
+  <rect x="275" y="340" width="250" height="80" fill="#6f42c1" stroke="#5a32a3" stroke-width="2" rx="10"/>
+  <text x="400" y="385" font-family="Arial" font-size="14" text-anchor="middle" fill="white">
+    Synthetic Data Generation
+  </text>
+
+  <!-- Arrows showing workflow -->
+  <line x1="250" y1="140" x2="300" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="140" x2="550" y2="140" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="150" y1="180" x2="250" y2="220" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="500" y1="180" x2="500" y2="220" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="350" y1="300" x2="400" y2="340" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#212529"/>
+    </marker>
+  </defs>
+</svg>

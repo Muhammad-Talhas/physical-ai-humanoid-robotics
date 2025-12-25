@@ -1,0 +1,120 @@
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <title>LLM-Robot Cognitive Integration</title>
+  <desc>Diagram showing how Large Language Models integrate with robotic systems</desc>
+
+  <!-- Background -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+
+  <!-- Title -->
+  <text x="400" y="40" font-family="Arial" font-size="20" text-anchor="middle" fill="#212529" font-weight="bold">
+    LLM-Robot Cognitive Integration Architecture
+  </text>
+
+  <!-- LLM Component -->
+  <rect x="100" y="80" width="200" height="150" fill="#d1ecf1" stroke="#0c5460" stroke-width="2" rx="10"/>
+  <text x="200" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Large Language Model
+  </text>
+  <text x="200" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    (Cognitive Agent)
+  </text>
+  <text x="200" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Natural language
+  </text>
+  <text x="200" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Reasoning
+  </text>
+  <text x="200" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Planning
+  </text>
+  <text x="200" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Knowledge
+  </text>
+
+  <!-- ROS 2 Interface -->
+  <rect x="350" y="80" width="100" height="150" fill="#cce7ff" stroke="#004085" stroke-width="2" rx="10"/>
+  <text x="400" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529" font-weight="bold">
+    ROS 2
+  </text>
+  <text x="400" y="125" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    Interface
+  </text>
+  <text x="400" y="150" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Actions
+  </text>
+  <text x="400" y="165" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Services
+  </text>
+  <text x="400" y="180" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Topics
+  </text>
+  <text x="400" y="195" font-family="Arial" font-size="10" text-anchor="middle" fill="#212529">
+    • Messages
+  </text>
+
+  <!-- Robot Control -->
+  <rect x="500" y="80" width="200" height="150" fill="#f8d7da" stroke="#721c24" stroke-width="2" rx="10"/>
+  <text x="600" y="110" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Robot Control
+  </text>
+  <text x="600" y="135" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    (Execution Layer)
+  </text>
+  <text x="600" y="160" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Navigation
+  </text>
+  <text x="600" y="175" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Manipulation
+  </text>
+  <text x="600" y="190" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Perception
+  </text>
+  <text x="600" y="205" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Communication
+  </text>
+
+  <!-- Safety Layer -->
+  <rect x="300" y="280" width="200" height="100" fill="#fff3cd" stroke="#856404" stroke-width="2" rx="10"/>
+  <text x="400" y="310" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Safety Validation
+  </text>
+  <text x="400" y="335" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Action filtering
+  </text>
+  <text x="400" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Constraint checking
+  </text>
+
+  <!-- Human-in-the-Loop -->
+  <rect x="100" y="420" width="200" height="80" fill="#e2e3e5" stroke="#383d41" stroke-width="2" rx="10"/>
+  <text x="200" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Human-in-the-Loop
+  </text>
+  <text x="200" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Oversight & Control
+  </text>
+
+  <!-- Environment -->
+  <rect x="500" y="420" width="200" height="80" fill="#d4edda" stroke="#155724" stroke-width="2" rx="10"/>
+  <text x="600" y="450" font-family="Arial" font-size="14" text-anchor="middle" fill="#212529" font-weight="bold">
+    Environment
+  </text>
+  <text x="600" y="470" font-family="Arial" font-size="12" text-anchor="middle" fill="#212529">
+    • Simulation/Real World
+  </text>
+
+  <!-- Arrows showing data flow -->
+  <line x1="300" y1="155" x2="350" y2="155" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="450" y1="155" x2="500" y2="155" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="230" x2="400" y2="280" stroke="#212529" stroke-width="2" marker-end="url(#arrow)"/>
+  <line x1="400" y1="380" x2="400" y2="420" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="200" y1="420" x2="200" y2="330" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="600" y1="420" x2="600" y2="230" stroke="#212529" stroke-width="1" stroke-dasharray="5,5"/>
+
+  <!-- Arrow marker definition -->
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L0,6 L9,3 z" fill="#212529"/>
+    </marker>
+  </defs>
+</svg>

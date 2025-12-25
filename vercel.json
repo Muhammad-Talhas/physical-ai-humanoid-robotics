@@ -1,0 +1,20 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "frontend_book/package.json",
+      "use": "@vercel/static-build",
+      "config": {
+        "buildCommand": "cd frontend_book && npm install && npm run build",
+        "outputDirectory": "frontend_book/build"
+      }
+    }
+  ],
+  "outputDirectory": "frontend_book/build",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}

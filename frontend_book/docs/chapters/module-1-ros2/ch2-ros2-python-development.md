@@ -15,6 +15,8 @@ ROS 2 provides Python client libraries through rclpy (ROS Client Library for Pyt
 
 ### Basic Node Structure
 
+![Python Node Structure](/assets/module-1/python-node-structure.svg)
+
 A minimal ROS 2 Python node follows this structure:
 
 ```python

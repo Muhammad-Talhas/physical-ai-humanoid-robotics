@@ -1,6 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600">
-  <rect width="100%" height="100%" fill="#f0f0f0"/>
-  <text x="50%" y="50%" font-family="Arial" font-size="16" text-anchor="middle" dominant-baseline="middle">
-    Unity HRI Scenario Diagram
-  </text>
+<svg width="800" height="600" xmlns="http://www.w3.org/2000/svg">
+  <!-- Unity HRI (Human-Robot Interaction) Scenario Diagram -->
+  <rect width="100%" height="100%" fill="#f8f9fa"/>
+  <text x="400" y="40" font-family="Arial" font-size="18" text-anchor="middle" fill="#333" font-weight="bold">Unity HRI Scenario</text>
+
+  <!-- Human User -->
+  <circle cx="150" cy="150" r="40" fill="#4e73df" stroke="#2e59d9" stroke-width="2"/>
+  <text x="150" y="155" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Human</text>
+  <text x="150" y="170" font-family="Arial" font-size="9" text-anchor="middle" fill="white">User</text>
+
+  <!-- VR/AR Device -->
+  <rect x="100" y="220" width="100" height="40" fill="#1cc88a" stroke="#17a2b8" stroke-width="2" rx="5"/>
+  <text x="150" y="245" font-family="Arial" font-size="9" text-anchor="middle" fill="white">VR/AR Device</text>
+
+  <!-- Unity Environment -->
+  <rect x="250" y="80" width="300" height="200" fill="#36b9cc" stroke="#2c97b0" stroke-width="2" rx="10"/>
+  <text x="400" y="110" font-family="Arial" font-size="12" text-anchor="middle" fill="white" font-weight="bold">Unity Environment</text>
+  <text x="400" y="130" font-family="Arial" font-size="10" text-anchor="middle" fill="white">3D Simulation</text>
+
+  <!-- Virtual Robot -->
+  <rect x="300" y="150" width="200" height="80" fill="#e74a3b" stroke="#c0392b" stroke-width="2" rx="8"/>
+  <text x="400" y="180" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Virtual Humanoid Robot</text>
+  <text x="400" y="200" font-family="Arial" font-size="9" text-anchor="middle" fill="white">3D Model with Animation</text>
+
+  <!-- Unity UI Panel -->
+  <rect x="450" y="120" width="80" height="60" fill="#f6c23e" stroke="#f4b62c" stroke-width="2" rx="5"/>
+  <text x="490" y="140" font-family="Arial" font-size="8" text-anchor="middle" fill="white">UI Panel</text>
+  <text x="490" y="155" font-family="Arial" font-size="7" text-anchor="middle" fill="white">Controls</text>
+
+  <!-- Real Robot -->
+  <rect x="600" y="150" width="150" height="80" fill="#858796" stroke="#6c6d7c" stroke-width="2" rx="8"/>
+  <text x="675" y="180" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Real Humanoid Robot</text>
+  <text x="675" y="200" font-family="Arial" font-size="9" text-anchor="middle" fill="white">Physical Hardware</text>
+
+  <!-- Communication Layer -->
+  <rect x="250" y="320" width="300" height="80" fill="#e84e3c" stroke="#d32f2f" stroke-width="2" rx="10"/>
+  <text x="400" y="350" font-family="Arial" font-size="12" text-anchor="middle" fill="white" font-weight="bold">Communication Layer</text>
+  <text x="400" y="370" font-family="Arial" font-size="10" text-anchor="middle" fill="white">ROS Bridge, Network</text>
+
+  <!-- Unity Engine -->
+  <rect x="300" y="430" width="200" height="60" fill="#4e73df" stroke="#2e59d9" stroke-width="2" rx="8"/>
+  <text x="400" y="460" font-family="Arial" font-size="10" text-anchor="middle" fill="white" font-weight="bold">Unity Engine</text>
+  <text x="400" y="475" font-family="Arial" font-size="9" text-anchor="middle" fill="white">Simulation Core</text>
+
+  <!-- HRI Interaction Zone -->
+  <ellipse cx="400" cy="280" rx="100" ry="30" fill="none" stroke="#333" stroke-width="2" stroke-dasharray="5,5"/>
+  <text x="400" y="285" font-family="Arial" font-size="10" text-anchor="middle" fill="#333" font-weight="bold">HRI Interaction Zone</text>
+
+  <!-- Data Flow Arrows -->
+  <line x1="190" y1="150" x2="250" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="150" x2="600" y2="150" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="280" x2="400" y2="320" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="400" y1="400" x2="400" y2="430" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="250" y1="360" x2="150" y2="260" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+  <line x1="550" y1="360" x2="600" y2="230" stroke="#333" stroke-width="2" marker-end="url(#arrowhead)"/>
+
+  <!-- Arrowhead definition -->
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#333"/>
+    </marker>
+  </defs>
+
+  <!-- Legend -->
+  <rect x="100" y="500" width="600" height="80" fill="white" stroke="#ccc" stroke-width="1" rx="5"/>
+  <text x="400" y="520" font-family="Arial" font-size="12" text-anchor="middle" fill="#333" font-weight="bold">HRI Workflow: Human → Unity → Communication → Real Robot</text>
+  <text x="200" y="545" font-family="Arial" font-size="9" text-anchor="middle" fill="#4e73df">Human: User with VR/AR</text>
+  <text x="400" y="545" font-family="Arial" font-size="9" text-anchor="middle" fill="#36b9cc">Unity: Simulation environment</text>
+  <text x="600" y="545" font-family="Arial" font-size="9" text-anchor="middle" fill="#858796">Robot: Physical humanoid</text>
+  <text x="400" y="565" font-family="Arial" font-size="9" text-anchor="middle" fill="#e74a3b">Communication: ROS bridge, real-time data</text>
 </svg>

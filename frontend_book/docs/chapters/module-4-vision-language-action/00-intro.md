@@ -1,4 +1,4 @@
-# Module 4: Vision-Language-Action (VLA)
+# Introduction to Module 4: Vision-Language-Action (VLA)
 
 ## Overview
 

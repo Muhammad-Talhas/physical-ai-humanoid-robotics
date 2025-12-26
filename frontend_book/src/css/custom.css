@@ -4,27 +4,329 @@
  * specifically for content-centric websites.
  */
 
-/* You can overwrite Infima variables here */
+/* Academic-focused color palette */
 :root {
-  --ifm-color-primary: #2e8555;
-  --ifm-color-primary-dark: #29784c;
-  --ifm-color-primary-darker: #277148;
-  --ifm-color-primary-darkest: #205d3b;
-  --ifm-color-primary-light: #33925d;
-  --ifm-color-primary-lighter: #359962;
-  --ifm-color-primary-lightest: #3cad6e;
+  /* Primary academic colors - indigo/electric blue accents */
+  --ifm-color-primary: #4f46e5; /* Indigo */
+  --ifm-color-primary-dark: #4338ca;
+  --ifm-color-primary-darker: #3730a3;
+  --ifm-color-primary-darkest: #312e81;
+  --ifm-color-primary-light: #6366f1;
+  --ifm-color-primary-lighter: #818cf8;
+  --ifm-color-primary-lightest: #c7d2fe;
+
+  /* Academic neutral backgrounds - soft slate */
+  --ifm-color-emphasis-100: #f8fafc; /* Soft slate background */
+  --ifm-color-emphasis-200: #f1f5f9;
+  --ifm-color-emphasis-300: #e2e8f0;
+  --ifm-color-emphasis-400: #cbd5e1;
+  --ifm-color-emphasis-500: #94a3b8;
+  --ifm-color-emphasis-600: #64748b;
+  --ifm-color-emphasis-700: #475569;
+  --ifm-color-emphasis-800: #334155;
+  --ifm-color-emphasis-900: #1e293b;
+
+  /* Additional academic colors */
+  --ifm-color-secondary: #64748b; /* Stone */
+  --ifm-color-success: #10b981; /* Emerald */
+  --ifm-color-info: #0ea5e9; /* Sky */
+  --ifm-color-warning: #f59e0b; /* Amber */
+  --ifm-color-danger: #ef4444; /* Red */
+
   --ifm-code-font-size: 95%;
+
+  /* Academic typography adjustments */
+  --ifm-h1-font-size: 2.5rem;
+  --ifm-h2-font-size: 2rem;
+  --ifm-h3-font-size: 1.75rem;
+  --ifm-h4-font-size: 1.5rem;
+
+  /* Line height for readability */
+  --ifm-line-height-base: 1.7;
+  --ifm-line-height-computed: 1.7;
+
+  /* Content width for optimal reading */
+  --ifm-container-width: 1200px;
+  --ifm-container-padding-horizontal: 1rem;
+  --ifm-container-padding-horizontal-md: 2rem;
 }
 
-/* Dark mode colors */
+/* Enhanced academic typography for readability */
+.markdown {
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 75ch; /* Optimal for readability - 65-75 characters per line */
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4,
+.markdown h5,
+.markdown h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.markdown h1 {
+  font-size: 2.25rem;
+  margin-top: 0;
+}
+
+.markdown h2 {
+  font-size: 1.875rem;
+}
+
+.markdown h3 {
+  font-size: 1.5rem;
+}
+
+.markdown h4 {
+  font-size: 1.25rem;
+}
+
+.markdown p {
+  margin-bottom: 1.5em;
+  line-height: 1.7;
+}
+
+.markdown ul,
+.markdown ol {
+  margin-bottom: 1.5em;
+  padding-left: 1.5em;
+}
+
+.markdown li {
+  margin-bottom: 0.5em;
+}
+
+.markdown blockquote {
+  border-left: 4px solid var(--ifm-color-primary);
+  padding-left: 1.5rem;
+  margin: 1.5rem 0;
+  font-style: italic;
+  color: var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .markdown blockquote {
+  color: var(--ifm-color-emphasis-300);
+}
+
+/* Responsive layout constraints for optimal content width */
+.docMainContainer_node_modules-\@docusaurus-theme-classic-src-theme-DocPage-styles-module {
+  padding: 0 0.5rem;
+}
+
+@media (min-width: 1024px) {
+  .docMainContainer_node_modules-\@docusaurus-theme-classic-src-theme-DocPage-styles-module {
+    padding: 0 2rem;
+  }
+}
+
+/* Content wrapper for constrained reading width */
+.container {
+  max-width: var(--ifm-container-width);
+}
+
+/* Breadcrumb navigation styling */
+.navbar__item {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.navbar__link {
+  color: var(--ifm-color-emphasis-700);
+}
+
+.navbar__link:hover {
+  color: var(--ifm-color-primary);
+}
+
+/* Breadcrumb navigation styling */
+.theme-doc-breadcrumbs {
+  margin: 0 0 1.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.breadcrumbs__item {
+  font-size: 0.875rem;
+}
+
+.breadcrumbs__item:not(:first-child)::before {
+  content: "›";
+  margin: 0 0.5rem;
+  color: var(--ifm-color-emphasis-500);
+}
+
+.breadcrumbs__item--active .breadcrumbs__link {
+  color: var(--ifm-color-emphasis-900);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+[data-theme='dark'] .theme-doc-breadcrumbs {
+  border-bottom: 1px solid var(--ifm-color-emphasis-700);
+}
+
+[data-theme='dark'] .breadcrumbs__item:not(:first-child)::before {
+  color: var(--ifm-color-emphasis-400);
+}
+
+/* Reading time indicator styling */
+.reading-time {
+  display: inline-block;
+  background-color: var(--ifm-color-emphasis-100);
+  color: var(--ifm-color-emphasis-700);
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-left: 0.5rem;
+  align-self: center;
+}
+
+[data-theme='dark'] .reading-time {
+  background-color: var(--ifm-color-emphasis-800);
+  color: var(--ifm-color-emphasis-300);
+}
+
+/* Doc page metadata section (includes reading time) */
+.theme-doc-markdown {
+  position: relative;
+}
+
+/* Article header with reading time */
+.article-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.article-reading-time {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--ifm-color-emphasis-600);
+  font-size: 0.875rem;
+}
+
+[data-theme='dark'] .article-reading-time {
+  color: var(--ifm-color-emphasis-400);
+}
+
+/* Scroll progress indicator */
+.scroll-progress-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: transparent;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.scroll-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #7c3aed);
+  width: 0%;
+  transition: width 0.1s ease-out;
+}
+
+/* Alternative position for progress indicator at top of viewport */
+.progress-indicator {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: transparent;
+  z-index: 1000;
+  pointer-events: none;
+}
+
+.progress-bar {
+  height: 100%;
+  background: var(--ifm-color-primary);
+  width: 0%;
+  transition: width 0.05s ease-out;
+}
+
+/* Responsive typography adjustments */
+@media (max-width: 768px) {
+  .markdown {
+    font-size: 16px;
+    padding: 0 0.5rem;
+  }
+
+  .markdown h1 {
+    font-size: 1.75rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.5rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.25rem;
+  }
+
+  .markdown h4 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .markdown {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .markdown h1 {
+    font-size: 1.5rem;
+  }
+
+  .markdown h2 {
+    font-size: 1.3rem;
+  }
+
+  .markdown h3 {
+    font-size: 1.15rem;
+  }
+}
+
+/* Dark mode academic colors */
 [data-theme='dark'] {
-  --ifm-color-primary: #25c2a0;
-  --ifm-color-primary-dark: #21af90;
-  --ifm-color-primary-darker: #1fa588;
-  --ifm-color-primary-darkest: #1a8870;
-  --ifm-color-primary-light: #29d5b0;
-  --ifm-color-primary-lighter: #32d8b4;
-  --ifm-color-primary-lightest: #4fddbf;
+  --ifm-color-primary: #6366f1; /* Lighter indigo for dark mode */
+  --ifm-color-primary-dark: #4f46e5;
+  --ifm-color-primary-darker: #4338ca;
+  --ifm-color-primary-darkest: #3730a3;
+  --ifm-color-primary-light: #818cf8;
+  --ifm-color-primary-lighter: #a5b4fc;
+  --ifm-color-primary-lightest: #c7d2fe;
+
+  /* Dark academic neutral backgrounds */
+  --ifm-color-emphasis-100: #0f172a; /* Dark slate */
+  --ifm-color-emphasis-200: #1e293b;
+  --ifm-color-emphasis-300: #334155;
+  --ifm-color-emphasis-400: #475569;
+  --ifm-color-emphasis-500: #64748b;
+  --ifm-color-emphasis-600: #94a3b8;
+  --ifm-color-emphasis-700: #cbd5e1;
+  --ifm-color-emphasis-800: #e2e8f0;
+  --ifm-color-emphasis-900: #f1f5f9;
+
+  /* Dark mode specific adjustments */
+  --ifm-background-color: #0f172a;
+  --ifm-navbar-background-color: #0f172a;
+  --ifm-footer-background-color: #0f172a;
 }
 
 .docusaurus-highlight-code-line {

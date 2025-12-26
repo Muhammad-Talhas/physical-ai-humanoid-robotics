@@ -2,7 +2,8 @@
   "label": "Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
   "position": 4,
   "link": {
-    "type": "doc",
-    "id": "chapters/module-3-ai-robot-brain/intro"
+    "type": "generated-index",
+    "title": "Module 3: The AI-Robot Brain (NVIDIA Isaac™)",
+    "description": "Advanced perception, navigation, and learning pipelines that act as the 'brain' of a humanoid robot using NVIDIA Isaac technologies."
   }
 }

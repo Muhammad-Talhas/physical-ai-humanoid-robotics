@@ -53,11 +53,6 @@ const config = {
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: false,
-        respectPrefersColorScheme: true,
-      },
       navbar: {
         title: 'Physical AI & Humanoid Robotics',
         logo: {
@@ -70,11 +65,6 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Textbook',
-          },
-          {
-            type: 'docsVersionDropdown',
-            position: 'right',
-            dropdownActiveClassDisabled: true,
           },
           {
             href: 'https://github.com/facebook/docusaurus',

@@ -1,3 +1,7 @@
+---
+sidebar_position: 4
+---
+
 # Chapter 3: Robot Modeling with URDF for Humanoids
 
 ## Learning Objectives

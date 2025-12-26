@@ -93,5 +93,4 @@ This textbook was developed as part of the Physical AI and Humanoid Robotics edu
 For questions, issues, or suggestions, please open an issue in the repository or contact the maintainers.
 
 ---
-
 *© 2025 Physical AI & Humanoid Robotics Textbook. Built with Docusaurus.*

@@ -1,4 +1,4 @@
-# Module 3: The AI-Robot Brain (NVIDIA Isaac™)
+# Introduction to Module 3: The AI-Robot Brain (NVIDIA Isaac™)
 
 Welcome to Module 3 of the Physical AI and Humanoid Robotics textbook. This module introduces advanced perception, navigation, and learning pipelines that act as the "brain" of a humanoid robot using NVIDIA Isaac technologies.
 

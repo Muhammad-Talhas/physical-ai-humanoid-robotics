@@ -1,3 +1,7 @@
+---
+sidebar_position: 1
+---
+
 # Introduction to Module 1: The Robotic Nervous System (ROS 2)
 
 This module introduces the foundational middleware layer of humanoid robotics, explaining ROS 2 as the "robotic nervous system" enabling communication, control, and coordination.

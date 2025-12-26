@@ -3,6 +3,7 @@
   "position": 2,
   "link": {
     "type": "generated-index",
-    "title": "Module 2: The Digital Twin (Gazebo & Unity)"
+    "title": "Module 2: The Digital Twin (Gazebo & Unity)",
+    "description": "Digital twin technologies for safe robot development and testing using Gazebo and Unity simulation environments."
   }
 }
